@@ -1,0 +1,38 @@
+.card {
+    width: 380px;
+    border: none
+}
+
+.border {
+    border-radius: 12px
+}
+
+.verde {
+    background-color: #B9F6CA
+}
+.amarillo{
+    background-color: #fae7ad;
+}
+.azul{
+    background-color: #5096ff;
+}
+.rojo{
+    background-color: #f56a78;
+}
+.gris{
+    background-color: #b3afaf;
+}
+
+
+.heading1 {
+    color: #0D47A1
+}
+
+.text {
+    color: #0D47A1
+}
+
+.char {
+    font-size: 30px;
+    font-weight: 700
+}
