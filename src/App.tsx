@@ -56,6 +56,7 @@ function App() {
           <Router history={history}>
             <Switch>
               <Route exact={true} path="/" component={Login} />         {/*le digo que en la raiz use el login */}
+              <Route exact={true} path="/Trivia" component={Login} />         {/*le digo que en la raiz use el login */}
               <Route exact={true} path="/Register" component={Register} />         {/*le digo que en la raiz use el login */}
               <Route exact={true} path="/FormTrivia"  component={FormTrivia}/>
               <Route exact={true} path="/Questions"  component={Questions_1}/>
