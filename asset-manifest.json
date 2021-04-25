@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Trivia/static/css/main.73cc7255.chunk.css",
+    "main.js": "/Trivia/static/js/main.52b7df34.chunk.js",
+    "main.js.map": "/Trivia/static/js/main.52b7df34.chunk.js.map",
+    "runtime-main.js": "/Trivia/static/js/runtime-main.eef83a7c.js",
+    "runtime-main.js.map": "/Trivia/static/js/runtime-main.eef83a7c.js.map",
+    "static/css/2.150d169a.chunk.css": "/Trivia/static/css/2.150d169a.chunk.css",
+    "static/js/2.20133c49.chunk.js": "/Trivia/static/js/2.20133c49.chunk.js",
+    "static/js/2.20133c49.chunk.js.map": "/Trivia/static/js/2.20133c49.chunk.js.map",
+    "static/js/3.2c9f006c.chunk.js": "/Trivia/static/js/3.2c9f006c.chunk.js",
+    "static/js/3.2c9f006c.chunk.js.map": "/Trivia/static/js/3.2c9f006c.chunk.js.map",
+    "index.html": "/Trivia/index.html",
+    "static/css/2.150d169a.chunk.css.map": "/Trivia/static/css/2.150d169a.chunk.css.map",
+    "static/css/main.73cc7255.chunk.css.map": "/Trivia/static/css/main.73cc7255.chunk.css.map",
+    "static/js/2.20133c49.chunk.js.LICENSE.txt": "/Trivia/static/js/2.20133c49.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.eef83a7c.js",
+    "static/css/2.150d169a.chunk.css",
+    "static/js/2.20133c49.chunk.js",
+    "static/css/main.73cc7255.chunk.css",
+    "static/js/main.52b7df34.chunk.js"
+  ]
+}
