@@ -2,6 +2,7 @@
   "name": "trivia",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Master-Victor.github.io/Trivia",
   "dependencies": {
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.1.0",
@@ -18,6 +19,7 @@
     "bootstrap": "^4.6.0",
     "firebase": "^8.4.2",
     "firebase-tools": "^9.10.0",
+    "gh-pages": "^3.1.0",
     "history": "4.10.0",
     "node-sass": "^5.0.0",
     "react": "^16.8",
@@ -37,6 +39,8 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
