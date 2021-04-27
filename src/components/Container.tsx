@@ -12,7 +12,7 @@ left: 50%;
 transform: translate(-50%,-50%);  
 border: 1px solid rgb(211,211,211);
 border-radius: 2%;
-${mediaQueries("md")`
+${mediaQueries("sm")`
      width: 90%;
  `};
    ${props => mediaQueries("sm")(`width: ${props.width}px`)}
