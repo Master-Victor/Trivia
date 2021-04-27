@@ -13,7 +13,7 @@ const style = {
       'left': '50%',
       'transform': 'translate(-50%,-50%)',  
       'border': '1px solid rgb(211,211,211)',
-      'borderRadius': '2%'
+      'borderRadius': '2%',
 } as React.CSSProperties
 
 
@@ -47,21 +47,21 @@ export default function SimpleSelect(){
   };
   return(
     <div>
-     <form onSubmit={handleSubmit(onSubmit)} style={style}>
-      <select {...register("category")}>
+     <form onSubmit={handleSubmit(onSubmit)} style={{}}>
+      <select {...register("category")} style={{width: '20vw'}} >
         <option value=''>Category</option>    
         <option value='9'>General Knowledge</option>  
         <option value='10'>Entertainment: Books</option>
         <option value='11'>Entertainment: Film</option>
         <option value='15'>Entertainment: Video Games</option>
       </select>
-      <select {...register("dificultad")}>
+      <select {...register("dificultad")} style={{width: '20vw'}} >
           <option value=''>Difficulty...</option>
           <option value='easy' >Easy</option>
           <option value='medium' >Medium</option>
           <option value='hard' >Hard</option>
       </select>
-      <input type="submit" />
+      <input type="submit" style={{width: '20vw'}}/>
     </form>
     </div>
   )

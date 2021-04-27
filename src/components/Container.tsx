@@ -13,9 +13,9 @@ transform: translate(-50%,-50%);
 border: 1px solid rgb(211,211,211);
 border-radius: 2%;
 ${mediaQueries("md")`
-    width: 90%;
-  `};
-  ${props => mediaQueries("md")(`width: ${props.width}px`)}
+     width: 90%;
+ `};
+   ${props => mediaQueries("sm")(`width: ${props.width}px`)}
 `;
 
 export default class Container extends React.Component {
