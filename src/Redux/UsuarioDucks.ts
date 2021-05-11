@@ -75,7 +75,6 @@ export const ingresoUsuarioActionEmail = (data :dataEmailLogin) => async( dispat
     try{
         const res = await firebase.auth().signInWithEmailAndPassword(data.email,data.password);
         //const res = await auth.signInWithPopup(provider)
-        console.log(res)
         const user = res.user ? res.user.displayName :undefined
         const email = res.user ? res.user.email :undefined
         dispatch({
@@ -107,7 +106,6 @@ export const ingresoUsuarioActionGoogle = () => async( dispatch: Dispatch ) =>{
     try{
         const provider = new firebase.auth.GoogleAuthProvider();
         const res = await auth.signInWithPopup(provider)
-        console.log(res)
         const user = res.user ? res.user.displayName :undefined
         const email = res.user ? res.user.email :undefined
         dispatch({
@@ -138,7 +136,6 @@ export const ingresoUsuarioActionFacebook = () => async( dispatch: Dispatch ) =>
     try{
         const facebookProvider = new firebase.auth.FacebookAuthProvider();
         const res = await auth.signInWithPopup(facebookProvider)
-        console.log(res)
         const user = res.user ? res.user.displayName :undefined
         const email = res.user ? res.user.email :undefined
         dispatch({
