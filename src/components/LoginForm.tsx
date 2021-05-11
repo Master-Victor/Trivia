@@ -24,7 +24,7 @@ const LoginForm = () => {
         return (
             <Form style={{padding: '10px'}} onSubmit={handleSubmit(onSubmit)} >
                 <Form.Group controlId="formBasicEmail">
-                    <Form.Label>Email address</Form.Label>
+                    <Form.Label><h5>Email address</h5></Form.Label>
                     <Form.Control type="email" placeholder="Enter email" {...register('email')}/>
                     <Form.Text className="text-muted">
                     We'll never share your email with anyone else.
@@ -32,7 +32,7 @@ const LoginForm = () => {
             </Form.Group>
 
             <Form.Group controlId="formBasicPassword">
-                <Form.Label>Password</Form.Label>
+                <Form.Label><h5>Password</h5></Form.Label>
                 <Form.Control type="password" placeholder="Password" {...register('password')}/>
             </Form.Group>
             <Form.Group controlId="formBasicCheckbox">

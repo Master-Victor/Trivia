@@ -19,6 +19,7 @@ import Result from './components/Result'
 import {useSelector, useDispatch} from 'react-redux'
 import {Redirect,Switch,Router} from "react-router-dom"
 import history from './components/history'
+import BackgroundAnimete from './components/BackgroundAnimete'
 //import { createBrowserHistory } from 'history'
 
 //const history = createBrowserHistory()
@@ -53,6 +54,7 @@ function App() {
 };
     return (
         <div className="App">
+          <BackgroundAnimete/>
           <Router history={history}>
             <Switch>
               <Route exact={true} path="/" component={Login} />         {/*le digo que en la raiz use el login */}

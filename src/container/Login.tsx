@@ -7,6 +7,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import GoogleLoginButton from '../components/GoogleLoginButton'
 import '../components/CSS/facebook.css'
 import {Redirect,Switch,Router} from "react-router-dom"
+import '../App.css'
 
 interface RootState {
     preguntas: {
@@ -41,14 +42,17 @@ const Login =()=> {
         return !activo ?(
             <div>
                 <Container>
-                    <fieldset>
-                    <legend style={{padding: '30px'}} ><b>Login to your account</b></legend>
-                    <LoginForm/>
-                    </fieldset>
-                    {/* <Title top="20vh">Welcome!</Title> */}
-                    <h6>or</h6>
-                    <button style={{border:'0px'}} onClick={ () => dispatch(ingresoUsuarioActionGoogle()) } ><GoogleLoginButton/></button>
-                    <button onClick={ ()=> dispatch(ingresoUsuarioActionFacebook()) } className="loginBtn loginBtn--facebook">Sign in with Facebook</button>
+                    <div className='box' >
+                        <div className='buttom' style={{transform: 'skew(0deg, -5deg)'}} >
+                            <fieldset>
+                            <legend style={{padding: '30px'}} ><b>Login to your account</b></legend>
+                            <LoginForm/>
+                            </fieldset>
+                            <h6>or</h6>
+                            <button style={{border:'0px',padding:'0px',}} onClick={ () => dispatch(ingresoUsuarioActionGoogle()) } ><GoogleLoginButton/></button>
+                            <button onClick={ ()=> dispatch(ingresoUsuarioActionFacebook()) } className="loginBtn loginBtn--facebook">Sign in with Facebook</button>
+                        </div>
+                    </div>
                 </Container>
             </div>
         ): <Redirect to='/FormTrivia'/>
